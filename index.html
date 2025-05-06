@@ -14,28 +14,29 @@
 </head>
 <body>
     <header class="fixed top-0 w-full shadow-md z-50">
-    <nav class="container mx-auto px-4 sm:px-6 py-4 flex flex-col sm:flex-row justify-between items-center">
-        <a href="#home" class="text-xl sm:text-2xl font-bold text-blue-300 flex items-center mb-2 sm:mb-0">
-            <i class="fas fa-code nav-icon text-blue-400"></i> Mohammad Khashashneh
-        </a>
-    </nav>
-</header>
-    <div class="container mx-auto px-4 sm:px-6">
-    <div class="flex flex-wrap justify-center gap-4 sm:gap-6 sm:flex-row">
-        <a href="#home" class="text-gray-300 hover:text-blue-400 font-medium flex items-center text-sm sm:text-base">
-            <i class="fas fa-home nav-icon text-blue-400"></i> Home
-        </a>
-        <a href="#about" class="text-gray-300 hover:text-blue-400 font-medium flex items-center text-sm sm:text-base">
-            <i class="fas fa-user nav-icon text-blue-400"></i> About
-        </a>
-        <a href="#projects" class="text-gray-300 hover:text-blue-400 font-medium flex items-center text-sm sm:text-base">
-            <i class="fas fa-project-diagram nav-icon text-blue-400"></i> Projects
-        </a>
-        <a href="#contact" class="text-gray-300 hover:text-blue-400 font-medium flex items-center text-sm sm:text-base">
-            <i class="fas fa-envelope nav-icon text-blue-400"></i> Contact
-        </a>
-    </div>
-</div>
+        <nav class="container mx-auto px-4 sm:px-6 py-4 flex flex-col sm:flex-row justify-between items-center">
+            <a href="#home" class="text-xl sm:text-2xl font-bold text-blue-300 flex items-center mb-4 sm:mb-0">
+                <i class="fas fa-code nav-icon text-blue-400"></i> Mohammad Khashashneh
+            </a>
+            <div class="flex flex-wrap justify-center gap-4 sm:gap-6">
+                <a href="#home" class="text-gray-300 hover:text-blue-400 font-medium flex items-center text-sm sm:text-base">
+                    <i class="fas fa-home nav-icon text-blue-400"></i> Home
+                </a>
+                <a href="#about" class="text-gray-300 hover:text-blue-400 font-medium flex items-center text-sm sm:text-base">
+                    <i class="fas fa-user nav-icon text-blue-400"></i> About
+                </a>
+                <a href="#projects" class="text-gray-300 hover:text-blue-400 font-medium flex items-center text-sm sm:text-base">
+                    <i class="fas fa-project-diagram nav-icon text-blue-400"></i> Projects
+                </a>
+                <a href="#contact" class="text-gray-300 hover:text-blue-400 font-medium flex items-center text-sm sm:text-base">
+                    <i class="fas fa-envelope nav-icon text-blue-400"></i> Contact
+                </a>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Add padding to prevent content from being hidden under fixed header -->
+    <div class="pt-24"></div>
 
     <!-- Home Section -->
     <section id="home" class="min-h-screen flex items-center justify-center gradient-bg text-white">
@@ -64,7 +65,7 @@
                 <p class="text-base sm:text-lg text-gray-300 mb-6">
                     <strong>Skills:</strong> Node.js, Express.js, ASP.NET MVC, .NET Core, Python, HTML, CSS, JavaScript, MS-SQL, Oracle, MongoDB, NLP, Deep Learning
                 </p>
-                <a href="/Mohammad Khashashneh Resume.pdf" class="inline-block gradient-btn text-white px-6 sm:px-8 py-3 rounded-full font-medium text-sm sm:text-base">
+                <a href="/Mohammad_Khashashneh_Resume.pdf" class="inline-block gradient-btn text-white px-6 sm:px-8 py-3 rounded-full font-medium text-sm sm:text-base">
                     <i class="fas fa-download mr-2"></i> Download Resume
                 </a>
             </div>
@@ -78,58 +79,28 @@
                 <i class="fas fa-code-branch mr-2 text-blue-400"></i> My Projects
             </h2>
             <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
-                
-                    <div class="project-card rounded-lg shadow-lg hover-scale" data-aos="fade-up" data-aos-delay="100">
-                        
-                        <div class="p-4 sm:p-6">
-                            <h3 class="text-lg sm:text-xl font-semibold text-blue-300 mb-2">WeatherApp</h3>
-                            <p class="text-sm sm:text-base text-gray-400 mb-4">A real-time weather application built with Node.js, Express.js, and MongoDB, featuring RESTful APIs and dynamic data processing.</p>
-                        </div>
-                        <div class="project-overlay">
-                            <a href="https://github.com/mohammadkhashashneeh/weatherapp" class="gradient-btn text-white px-4 sm:px-6 py-2 rounded-full font-medium text-sm sm:text-base">
-                                <i class="fab fa-github mr-2"></i> View on GitHub
-                            </a>
-                        </div>
+                <div class="project-card rounded-lg shadow-lg hover-scale" data-aos="fade-up" data-aos-delay="100">
+                    <div class="p-4 sm:p-6">
+                        <h3 class="text-lg sm:text-xl font-semibold text-blue-300 mb-2">WeatherApp</h3>
+                        <p class="text-sm sm:text-base text-gray-400 mb-4">A real-time weather application built with Node.js, Express.js, and MongoDB, featuring RESTful APIs and dynamic data processing.</p>
                     </div>
-                
-                    <div class="project-card rounded-lg shadow-lg hover-scale" data-aos="fade-up" data-aos-delay="200">
-                        
-                        <div class="p-4 sm:p-6">
-                            <h3 class="text-lg sm:text-xl font-semibold text-blue-300 mb-2">OpenSooq E-Commerce Simulation</h3>
-                            <p class="text-sm sm:text-base text-gray-400 mb-4">A simulated e-commerce platform developed using ASP.NET MVC, Entity Framework, and MS-SQL, with responsive UI and CRUD operations.</p>
-                        </div>
-                        <div class="project-overlay">
-                            <a href="https://github.com/mohammadkhashashneeh/opensooq-simulation" class="gradient-btn text-white px-4 sm:px-6 py-2 rounded-full font-medium text-sm sm:text-base">
-                                <i class="fab fa-github mr-2"></i> View on GitHub
-                            </a>
-                        </div>
+                    <div class="project-overlay">
+                        <a href="https://github.com/mohammadkhashashneeh/weatherapp" class="gradient-btn text-white px-4 sm:px-6 py-2 rounded-full font-medium text-sm sm:text-base">
+                            <i class="fab fa-github mr-2"></i> View on GitHub
+                        </a>
                     </div>
-                
-                    <div class="project-card rounded-lg shadow-lg hover-scale" data-aos="fade-up" data-aos-delay="300">
-                        
-                        <div class="p-4 sm:p-6">
-                            <h3 class="text-lg sm:text-xl font-semibold text-blue-300 mb-2">Arabic Named Entity Recognition</h3>
-                            <p class="text-sm sm:text-base text-gray-400 mb-4">A research project using BERT-based models for NLP, focusing on entity recognition in Arabic text.</p>
-                        </div>
-                        <div class="project-overlay">
-                            <a href="https://github.com/mohammadkhashashneeh/arabic-ner" class="gradient-btn text-white px-4 sm:px-6 py-2 rounded-full font-medium text-sm sm:text-base">
-                                <i class="fab fa-github mr-2"></i> View on GitHub
-                            </a>
-                        </div>
+                </div>
+                <div class="project-card rounded-lg shadow-lg hover-scale" data-aos="fade-up" data-aos-delay="200">
+                    <div class="p-4 sm:p-6">
+                        <h3 class="text-lg sm:text-xl font-semibold text-blue-300 mb-2">OpenSooq E-Commerce Simulation</h3>
+                        <p class="text-sm sm:text-base text-gray-400 mb-4">A simulated e-commerce platform developed using ASP.NET MVC, Entity Framework, and MS-SQL, with responsive UI and CRUD operations.</p>
                     </div>
-                
-                    <div class="project-card rounded-lg shadow-lg hover-scale" data-aos="fade-up" data-aos-delay="400">
-                        
-                        <div class="p-4 sm:p-6">
-                            <h3 class="text-lg sm:text-xl font-semibold text-blue-300 mb-2">Dermatological Diagnosis Chatbot</h3>
-                            <p class="text-sm sm:text-base text-gray-400 mb-4">An AI-powered chatbot using expert systems for dermatological diagnosis and treatment recommendations.</p>
-                        </div>
-                        <div class="project-overlay">
-                            <a href="https://github.com/mohammadkhashashneeh/dermatological-chatbot" class="gradient-btn text-white px-4 sm:px-6 py-2 rounded-full font-medium text-sm sm:text-base">
-                                <i class="fab fa-github mr-2"></i> View on GitHub
-                            </a>
-                        </div>
+                    <div class="project-overlay">
+                        <a href="https://github.com/mohammadkhashashneeh/opensooq-simulation" class="gradient-btn text-white px-4 sm:px-6 py-2 rounded-full font-medium text-sm sm:text-base">
+                            <i class="fab fa-github mr-2"></i> View on GitHub
+                        </a>
                     </div>
+                </div>
                 
             </div>
         </div>
@@ -145,7 +116,7 @@
                 <p class="text-base sm:text-lg text-gray-300 mb-6">I'm excited to connect for new opportunities and collaborations. Reach out to me!</p>
                 <div class="flex flex-wrap justify-center gap-4">
                     <a href="mailto:mohammadkhashashneeh@gmail.com" class="gradient-btn text-white px-4 sm:px-6 py-3 rounded-full font-medium flex items-center text-sm sm:text-base">
-                        <i class="fas fa-envelope mr-2"></i> Email
+                        <i class="fas fa-envelope mr-2"></i> Email Me
                     </a>
                     <a href="https://www.linkedin.com/in/mohammad-khashashneh-76bb47182/" class="gradient-btn text-white px-4 sm:px-6 py-3 rounded-full font-medium flex items-center text-sm sm:text-base">
                         <i class="fab fa-linkedin mr-2"></i> LinkedIn
@@ -159,12 +130,12 @@
     </section>
 
     <footer class="text-white py-6">
-    <div class="container mx-auto px-4 sm:px-6 text-center">
-        <p class="flex items-center justify-center text-sm sm:text-base">
-            <i class="fas fa-copyright mr-2"></i> 2025 Mohammad Khashashneh. All rights reserved.
-        </p>
-    </div>
-</footer>
+        <div class="container mx-auto px-4 sm:px-6 text-center">
+            <p class="flex items-center justify-center text-sm sm:text-base">
+                <i class="fas fa-copyright mr-2"></i> 2025 Mohammad Khashashneh. All rights reserved.
+            </p>
+        </div>
+    </footer>
 
     <script>
         AOS.init({
